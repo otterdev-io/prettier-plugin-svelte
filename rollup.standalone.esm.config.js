@@ -23,16 +23,9 @@ export default {
         }),
     ],
     external: ['prettier/esm/standalone', 'svelte'],
-    output: [
-        {
-            file: 'standalone/index.js',
-            format: 'cjs',
-            sourcemap: true,
-        },
-        {
-            file: 'standalone/index.mjs',
-            format: 'esm',
-            sourcemap: true,
-        },
-    ],
+    output: {
+        file: 'standalone/index.mjs',
+        format: 'esm',
+        sourcemap: true,
+    },
 };
